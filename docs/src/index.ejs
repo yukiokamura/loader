@@ -11,18 +11,30 @@ var relativePath = '../'.repeat([absolutePath.split('/').length -1]);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="" name="description">
     <meta name="keywords" content="">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css?<%=Math.random()%>">
-    <script src='assets/js/lib.js' defer></script>
-    <script src="assets/js/app.js?<%=Math.random()%>" defer></script>
+    <%# <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet"> %>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <%# <script src='assets/js/lib.js' defer></script> %>
+    <%# <script src="assets/js/app.js" defer></script> %>
   </head>
   <body>
-    
+    <div class="loader">
+      <div class="wrap">
+        <div class="bar"></div>
+        <div class="number">00</div>
+      </div>
+      
+    </div>
+    <div class="loaded-resouses">
+      <div class="wrap">
+        <p class="tit">loaded Resouses : </p>
+        <div class="inner">
+        </div>
+      </div>
+      
+    </div>
     <div class="info">
       <p class="des">
-        <span>Three.js</span>
-        <span>GLSL</span>
-        <span>jQuery</span>
+        <span>Web Worker</span>
       </p>
       <div class="links">
         <a href="https://github.com/yukiokamura/loader/tree/master/docs" target="_blank">
@@ -30,5 +42,6 @@ var relativePath = '../'.repeat([absolutePath.split('/').length -1]);
         </a>
       </div>
     </div>
+    <script src="./assets/js/loader.js"></script>
   </body>
 </html>
